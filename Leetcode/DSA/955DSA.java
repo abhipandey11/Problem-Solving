@@ -1,3 +1,4 @@
+import java.util.*;
 class Solution {
     public int minDeletionSize(String[] strs) {
 
@@ -6,7 +7,7 @@ class Solution {
         int s=strs.length;
         boolean alreadysorted[]=new boolean[s];
         Arrays.fill(alreadysorted,false);
-        boolean deleted=false;
+        boolean deleted;
         for(int i=0;i<n;i++){
             deleted=false;
             for(int j=1;j<s;j++){
